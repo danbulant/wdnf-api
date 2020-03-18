@@ -12,7 +12,7 @@ app.get("/", (req, res)=>{
 })
 
 
-app.use(morgan());
+app.use(morgan("tiny"));
 app.use("/v1", v1);
 
 app.listen(14453, ()=>{
