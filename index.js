@@ -1,5 +1,6 @@
 const express = require("express");
 const morgan = require("morgan");
+const cookieParser = require('cookie-parser')
 const app = express();
 
 const v1 = require("./v1");
@@ -11,7 +12,7 @@ app.get("/", (req, res)=>{
     })
 })
 
-
+app.use(cookieParser());
 app.use(morgan("tiny"));
 app.use("/v1", v1);
 
