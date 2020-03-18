@@ -5,4 +5,4 @@ API to be used by WDNF website. Looking for frontend? See [wdnf.github.io](https
 ## Setup
 
 * Install dependencies with NPM (`npm i`).
-* Create config.js exporting object for OAuth2 client (in v1/discord).
+* Create config.js exporting object for OAuth2 client (in v1/discord). We need at least scopes `identify` and `email`
